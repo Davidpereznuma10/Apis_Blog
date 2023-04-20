@@ -13,55 +13,68 @@
 <body>
     <div class="main-wrapper">
         <div class="app">
+
+            <!-- APP HEADER -->
             <header class="app-header">
                 <h2 class="app-header-title">Super<span>Hero.</span></h2>
                 <form class="app-header-search">
                     <input type="text" class="form-control"
-                    placeholder="Sear your SuperHero Here . . ." 
+                    placeholder="Search your SuperHero Here . . ." 
                     name="search">
                     <button type="submit" class="search-btn">
                         <i class="fas fa-search"></i>
                     </button>
-                    <div class="serch-list" id="search-list">
+                    <div class="search-list" id="search-list">
                         <div class="search-list-item">
-                            <img style="width: 90%;" src="./styles/img/batman-el-caballero-de-la-noche.jpg" alt="batman">
+                            <img src="./styles/img/batman-el-caballero-de-la-noche.jpg" alt="batman">
                             <p>Batman</p> 
                         </div>
                     </div>
                 </form>
             </header>
+            <!-- END OF APP HEADER -->
             <main class="app-body">
                 <div class="app-body-content">
-                    <div class="app-body-content-thumbnail">
-                        <img style="width: 90%;" src="./styles/img/batman-el-caballero-de-la-noche.jpg" alt="">
+                    <!-- APP BODY THUMBNAIL -->
+                    <div class="app-body-content-thumbnaiL">
+                        <img src="./styles/img/batman-el-caballero-de-la-noche.jpg" alt="">
                     </div>
+                    <!-- END OF APP BODY THUMBNAIL -->
+
                     <div class="app-body-content-list">
                         <div class="name">Batman</div>
+
+
+                        <!-- TABS HEAD -->
                         <div class="app-body-tabs-head">
-                            <button type="button" class="tab-head-single" data-id="1">Power-stats</button>
-                            <button type="button" class="tab-head-single" data-id="2">Biography</button>
-                            <button type="button" class="tab-head-single" data-id="3">Aparence</button>
-                            <button type="button" class="tab-head-single" data-id="4">Connections</button>
+                            <button type="button" class="tab-head-single" data-id="1"><span>Power-stats</span></button>
+                            <button type="button" class="tab-head-single" data-id="2"><span>Biography</span></button>
+                            <button type="button" class="tab-head-single" data-id="3"><span>Aparence</span></button>
+                            <button type="button" class="tab-head-single" data-id="4"><span>Connections</span></button>
                         </div>
+                        <!-- END OF TABS HEAD -->
+
+                        <!-- TABS BODY -->
                     <div class="app-body-tabs-body">
-                        <ul class="tab-body-single-powerstats">
+                        <!-- POWERSTASTS TAB -->
+                        <ul class="tab-body-single powerstats">
                             <li>
                                 <div>
-                                    <i class ="fas fa-shield-alt"></i>
+                                    <i class ="fa-solid fa-shield-halved"></i>
                                     <span>Inteligence</span>
                                 </div>
                                 <span>100</span>
                             </li>
                             <li>
                                 <div>
-                                    <i class ="fas fa-shield-alt"></i>
+                                    <i class ="fa-solid fa-shield-halved"></i>
                                     <span>Strength</span>
                                 </div>
                                 <span>26</span>
                             </li>
                             <li>
                                 <div>
-                                    <i class ="fas fa-shield-alt"></i>
+                                    <i class ="fa-solid fa-shield-halved"></i>
                                     <span>Speed</span>
                                 </div>
                                 <span>27</span>
@@ -75,27 +88,30 @@
                             </li>
                             <li>
                                 <div>
-                                    <i class ="fas fa-shield-alt"></i>
+                                    <i class ="fa-solid fa-shield-halved"></i>
                                     <span>Power</span>
                                 </div>
                                 <span>47</span>
                             </li>
                             <li>
                                 <div>
-                                    <i class ="fas fa-shield-alt"></i>
+                                    <i class ="fa-solid fa-shield-halved"></i>
                                     <span>Combat</span>
                                 </div>
                                 <span>100</span>
                             </li>
                         </ul>
-                      <ul class="tab-body-single">
+                        <!-- END PF POWERSTASTS TAB -->
+
+                        <!-- BIOGRAPHY TAB -->
+                      <ul class="tab-body-single biography">
                         <li>
                             <span>Full Name</span>
                             <span>Terry Mcgennis</span>
                         </li>
                         <li>
                             <span>Alert-Egos</span>
-                            <span>No Alter Egos FOund</span>
+                            <span>No Alter Egos Found</span>
                         </li>
                         <li>
                             <span>Aliase</span>
@@ -114,6 +130,9 @@
                             <span>DC Comics</span>
                         </li>
                     </ul> 
+                    <!-- END OF BIOGRAPHY TAB -->
+
+                    <!-- APPEARANCE -->
                      <ul class="tab-body-single appearance">
                         <li>
                             <span>
@@ -123,14 +142,20 @@
                         </li>
                         <li>
                             <span>
+                                <i class="fas fa-star"></i>Gender
+                                <span>Male</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
                                 <i class="fas fa-star"></i>Height
-                                <span>170 Lb</span>
+                                <span>5' 10''</span>
                             </span>
                         </li>
                         <li>
                             <span>
                                 <i class="fas fa-star"></i>Weight
-                                <span>Male</span>
+                                <span>170 Lb</span>
                             </span>
                         </li>
                         <li>
@@ -146,7 +171,10 @@
                             </span>
                         </li>
                      </ul>
-                     <ul class="tab-bofy-single-connections">
+                      <!-- END OF APPEARANCE -->
+
+                      <!-- CONNECTIONS -->
+                     <ul class="tab-bofy-single connections">
                         <li>
                             <span>Group--Afiliation</span>
                             <span>Batman Family, Justice League Unlimited</span>
@@ -160,6 +188,7 @@
                             <span>Batman Family, Justice League Unlimited</span>
                         </li>
                      </ul>
+                     <!-- END OF THE CONNECTIONS -->
                     </div>
                     </div>
                 </div>
