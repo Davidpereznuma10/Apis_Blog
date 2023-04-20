@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    --popins-font: 'poppins', sans-serif;
+    --dark-color:  rgb(0,0,0);
+    --red-color: #860619;
+    --light-color: #fff;
+    --grey-color: #505050;
+    --yellow-color:#f2c10e;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+}
+html{
+    font-size:  10px;
+}
+body{
+    font-size:  1.7rem;
+    min-width: 100vh;
+    background: var(--red-color);
+    background: linear-gradient(169deg,#f64445 0%, #611cac 100%);
+    line-height: 1.6;
+    font-family: var(--popins-font);
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+}
+button, input{
+    font-size: 1.8rem;
+    font-family: inherit;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+}
+li{
+    width: 100%;
+    display: block;
+}
+.main-wrapper{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+.app{
+    background-color: var(--dark-color);
+    margin: 2rem;
+    padding: 5rem;
+    border-radius: 6px;
+    color: #fff;
+    box-shadow: 0px 5px 11px 0px rgba(0,0,0,0.5);
+}
+.app-header{
+    display: flex;
+}
+
+.app-header-title span{
+    color: var(--red-color);
+}
+.app-header-search{
+    border: 2px solid var(--grey-color);
+    border-radius: 3rem;
+    padding: 1rem 2rem ;
+    position: relative;
+}
+.app-header-search .form-control{
+    min-width: 470px;
+    color: #fff;
+}
+.app-header-search .search-btn{
+    color: var(--grey-color);
+    font-size: 2.3rem;
+    cursor: pointer;
+}
