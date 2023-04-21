@@ -88,6 +88,7 @@ img{
     width: 100%;
     max-height: 400px;
     overflow-y: scroll;
+    display: none;
 }
 .search-list::-webkit-scrollbar{
     width: 7px;
@@ -156,5 +157,151 @@ img{
     opacity: 0.9;
 }
 .tab-head-single-active-tab::after{
-    
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: -1.7rem;
+    width: 100%;
+    height: 4px;
+    background-color: var(--red-color);
 }
+/* END OF APP BODY TABS HEAD */
+
+/* APP BODY CONTENT */
+.app-body-content{
+    display: grid;
+    grid-template-columns: 2fr 3fr ;
+    column-gap: 4rem;
+    margin-right: 2rem;
+}
+.app-body-content-thumbnail{
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.app-body-content-list .name{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.4rem;
+    font-weight: 500;
+    margin-top: -1.2rem;
+}
+.app-body-tabs-body{
+    margin-top: 3.6rem;
+}
+/* END OF APP BODY CONTENT */
+
+/* powerstats */
+.powerstats{
+
+}
+.powerstats li{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2rem auto;
+    padding: 1.2rem;
+    box-shadow: 0 5px 7px rgba(0,0,0,0.5);
+}
+.powerstats li div i{
+    color: var(--red-color);
+}   
+.powerstats li div span{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 7px;
+    padding: 0 1.2rem ;
+    margin: 0 1.6rem;
+    opacity: 0.6;
+    font-size: 1.7rem;
+}
+.powerstats li > span{
+    color: var(--yellow-color);
+    font-weight: 700;
+}
+/* BIOGRAPHY */
+.biography{
+
+}
+.biography li{
+    margin: 3.4rem 0;
+}
+.biography li span{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+.biography li span:first-child{
+    font-weight: 600;
+    color:var(--grey-color);
+    margin-right: 1rem;
+}
+.biography li span:last-child{
+    font-weight: 300; 
+}
+/* END OF BIOGRAPHY */
+
+/* APPEARANCE */
+.appearance{
+
+}
+.appearance li{
+    margin: 3.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.appearance li span:first-child{
+    color: var(--yellow-color);
+    margin-right: 1.4rem;
+}
+.appearance li span:first-child{
+    text-transform: capitalize;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 4rem;
+}
+.appearance li span:last-child{
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: var(--red-color);
+    border-radius: 2rem;
+    padding: 0 1rem;
+    text-align: right;
+}
+/* END OF APPEARANCE */
+
+/* CONNECTIONS */
+.connections{
+
+}
+.connections li span:first-child{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--grey-color);
+    margin: 1.5rem 0 1.6rem 4rem;
+    position: relative;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-top: 3.6rem;
+}
+.connections li span:first-child::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+    height: 3px;
+    width: 30px;
+    background-color: var(--yellow-color);
+}
+.connections li span:last-child{
+    letter-spacing: 1px;
+    line-height: 1.9;
+}
+/* END OF CONNECTIONS */
+
+
+
