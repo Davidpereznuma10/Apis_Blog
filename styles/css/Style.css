@@ -77,3 +77,84 @@ img{
     font-size: 2.3rem;
     cursor: pointer;
 }
+
+/* SEARCH LIST */
+.search-list{
+    z-index: 10;
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: 0;
+    background-color: var(--light-color);
+    width: 100%;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.search-list::-webkit-scrollbar{
+    width: 7px;
+}
+.search-list::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.search-list::-webkit-scrollbar-thumb{
+    background-color: var(--red-color);
+    border-radius: 5px;
+}
+.search-list-item{
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-color);
+    padding: 0.4rem 0;
+}
+.search-list-item img{
+    width: 50px;
+    margin-right: 2rem;
+}
+.search-list-item p{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* APP BODY */
+.app-body{
+    margin-top: 4rem;
+    height: 600px;
+    overflow-y: scroll;
+}
+.app-body::-webkit-scrollbar{
+    width: 7px;
+}
+.app-body::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+}
+.app-body::-webkit-scrollbar-thumb{
+    background-color: var(--red-color);
+    border-radius: 5px;
+}
+
+/* APP BODY TABS HEAD */
+.app-body-tabs-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+    border-radius: 2px;
+    padding-bottom: 1.6rem;
+    margin: 2.4rem 0;
+}
+.tab-head-single{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.tab-head-single:hover{
+    opacity: 0.9;
+}
+.tab-head-single-active-tab::after{
+    
+}
