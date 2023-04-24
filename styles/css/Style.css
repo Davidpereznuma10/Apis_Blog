@@ -88,7 +88,7 @@ img{
     width: 100%;
     max-height: 400px;
     overflow-y: scroll;
-    display: none;
+    
 }
 .search-list::-webkit-scrollbar{
     width: 7px;
@@ -156,7 +156,7 @@ img{
 .tab-head-single:hover{
     opacity: 0.9;
 }
-.tab-head-single-active-tab::after{
+.tab-head-single.active-tab::after{
     content:"";
     position: absolute;
     left: 0;
@@ -193,7 +193,7 @@ img{
 
 /* powerstats */
 .powerstats{
-
+    display: none;
 }
 .powerstats li{
     display: flex;
@@ -220,7 +220,7 @@ img{
 }
 /* BIOGRAPHY */
 .biography{
-
+    display: none;
 }
 .biography li{
     margin: 3.4rem 0;
@@ -242,7 +242,7 @@ img{
 
 /* APPEARANCE */
 .appearance{
-
+    display: none;
 }
 .appearance li{
     margin: 3.2rem 0;
@@ -305,3 +305,62 @@ img{
 
 
 
+@media screen and (max-width: 1200px) {
+    .app-body-content{
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+    }
+    .app-header-single{
+        margin: 1.5rem 0;
+    }  
+}
+
+@media screen and (max-width: 1000px) {
+    .app-body-content-list .name{
+        text-align: center;
+        margin-top: 1.8rem;
+    }
+    .app-body-content{
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+        max-width: 680px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .app-body-content-thumbnail{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:992px) {
+    .app-header{
+        flex-direction: column;
+    }
+    .app-header-search{
+        margin-top: 2.8rem;
+    } 
+}
+@media screen and (max-width: 768px) {
+    .app-body-tabs-head{
+        flex-direction: column;
+    }
+    .app-header-search{
+        display: flex;
+    }
+    .app-header-search .form-control{
+        min-width: auto;
+        color: #fff;
+    }
+    .app-header-search .search-btn{
+        padding-left:2rem ;
+    }
+    .app-body-tabs-body{
+        margin-right: 3rem;
+    }
+}
+
+/* SHOW-TAB */
+
+.show-tab{
+    display: block;
+}
