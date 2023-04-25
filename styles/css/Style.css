@@ -27,6 +27,21 @@ body{
     align-items: center;
     justify-content: stretch;
 }
+#loader {
+  background-color: rgba(0, 0, 0, 0.5);
+  position:fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+#video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+} 
 button, input{
     font-family: inherit;
     font-size: 1.8rem;
