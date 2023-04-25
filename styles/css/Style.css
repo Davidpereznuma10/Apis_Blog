@@ -87,9 +87,7 @@ img{
     background-color: var(--light-color);
     width: 100%;
     max-height: 400px;
-    overflow-y: scroll;
-    display: none;
-    
+    overflow-y: scroll;    
 }
 .search-list::-webkit-scrollbar{
     width: 7px;
