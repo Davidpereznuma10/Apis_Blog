@@ -1,6 +1,14 @@
 const allTabsBody = document.querySelectorAll ('.tab-body-single');
 const allTabsHead = document.querySelectorAll('.tab-head-single');
 const searchForm = document.querySelector('.app-header-search');
+const loader = document.querySelector("#loader");
+const video = document.querySelector("#video");
+
+video.src = 'style/img/logo_horizontal.mp4';
+video.play();
+video.addEventListener('ended',(e)=>{
+ loader.style.display='none';
+})
 
 let searchList = document.querySelector('#search-list');
 let activeTab = 1, allData;
