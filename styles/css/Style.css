@@ -274,7 +274,7 @@ img{
 
 /* CONNECTIONS */
 .connections{
-
+    display: none;
 }
 .connections li span:first-child{
     display: block;
