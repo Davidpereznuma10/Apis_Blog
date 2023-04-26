@@ -58,7 +58,7 @@ const fetchAllSuperHero = async(searchText) =>{
     } catch(error){
         console.log(error);};
 };
-// CONSUME API TO SHOW THE NAME AND IMG
+// CONSUME API TO SHOW THE NAME AND IMG; CREATED A NEW ELEMENT
 const showSearchList = (data) => {
     searchList.innerHTML = "";
     data.forEach(dataItem => {
@@ -70,7 +70,7 @@ const showSearchList = (data) => {
             searchList.appendChild(divElem)
     });
 };
-
+// MAKE THE SEARCH START SINCE 1 LETTER
 searchForm.search.addEventListener('keyup',(e)=>{
     if(searchForm.search.value.length > 1){
         fetchAllSuperHero(searchForm.search.value)
@@ -78,6 +78,7 @@ searchForm.search.addEventListener('keyup',(e)=>{
         searchList.innerHTML = "";
     };
 });
+// MAKE THAT JUST PRINT THE SUPERHERO SELECTED
 searchList.addEventListener('click', (e)=>{
    let searchId = e.target.dataset.id; 
    let singleData = allData.results.filter(singleData=>{
@@ -86,6 +87,7 @@ searchList.addEventListener('click', (e)=>{
    showSuperHeroDetails(singleData);
    searchList.innerHTML = "";
 });
+// PRINT INTO THE HTML ALL THE NEW ELEMENTS
 const showSuperHeroDetails = (data) => {
     console.log(data);
     document.querySelector('.app-body-content-thumbnail').innerHTML =`
