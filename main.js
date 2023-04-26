@@ -4,6 +4,7 @@ const searchForm = document.querySelector('.app-header-search');
 const loader = document.querySelector("#loader");
 const video = document.querySelector("#video");
 
+// VIDEO FUNCTION
 video.src = 'styles/img/logo_horizontal.mp4';
 video.play();
 video.addEventListener('ended',(e)=>{
@@ -57,6 +58,7 @@ const fetchAllSuperHero = async(searchText) =>{
     } catch(error){
         console.log(error);};
 };
+// CONSUME API TO SHOW THE NAME AND IMG
 const showSearchList = (data) => {
     searchList.innerHTML = "";
     data.forEach(dataItem => {
